@@ -1,0 +1,44 @@
+<wxs src="../../../../utils/index.wxs" module="utils" />
+<view class="detail-coupons" wx:if="{{coupons.length !== 0}}">
+	<wj-slot-bar bind:handleclick="couponsClick">
+		<view slot="left" class="coupons-left">优惠</view>
+		<view slot="center" class="coupons-center">
+			<view class="coupons-title">店铺优惠券</view>
+			<view class="coupons-items">
+				<block wx:for="{{coupons}}" wx:key="index">
+					<view class="coupons-item">
+						{{item}}
+					</view>
+				</block>
+			</view>
+		</view>
+		<view slot="right" class="coupons-right">领劵</view>
+	</wj-slot-bar>
+	<wj-action-sheet id="action-sheet" tops="{{sheetHeight}}">
+		<view class="show-coupons">
+			<view class="title">店铺优惠券</view>
+			<view class="center">
+				<block wx:for="{{coupons}}" wx:key="index">
+					<view class="item">
+						<image class="image" src="https://s10.mogucdn.com/mlcdn/c024f5/180823_7j4gkgcal9285kdiflg7eec0hfe67_1035x225.png"/>
+						<view class="detail">
+							<view class="left">
+								<view class="top">
+									<view class="ctop">{{utils.getLastNumber(item)}}</view>
+									<view class="ctop2">{{item}}</view>
+								</view>
+							<view class="bottom">
+								2020.7.3 15:25-2020.9.30 23:59
+							</view>
+							</view>
+							<view class="right">
+								立即领取
+							</view>
+						</view>
+					</view>
+				</block>
+			</view>
+			<view class="complete" bindtap="complete">完成</view>
+		</view>
+	</wj-action-sheet>
+</view>

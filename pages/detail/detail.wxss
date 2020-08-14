@@ -1,0 +1,33 @@
+@import "../../assets/iconfont/iconfont";
+
+.detail-page .scroll {
+  height: 100vh;
+}
+
+/* 轮播图 */
+.swiper {
+  height: 800rpx !important;
+}
+
+/* 热卖推荐 */
+.detail-recommend{
+  padding: 20rpx;
+  padding-top: 0;
+  box-sizing: border-box;
+  margin-bottom: 50rpx;
+}
+
+.hot {
+  margin-top: 40rpx;
+  padding: 20rpx;
+  font-size: 32rpx;
+  box-sizing: border-box;
+  border-left: 10rpx solid #ff5777;
+}
+
+.detail-menu{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

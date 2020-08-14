@@ -1,0 +1,23 @@
+<view class="detail-menu">
+	<view class="menu-left">
+		<view class="item">
+			<view class="iconfont icon-dianpu"></view>
+			<view>店铺</view>
+		</view>
+		<view class="item kefu">
+			<view class="iconfont icon-xiaoxi"></view>
+			<view>客服</view>
+		</view>
+		<view class="item">
+			<view class="iconfont icon-unstarred"></view>
+			<view>收藏</view>
+		</view>
+	</view>
+	<view class="menu-right">
+		<view class="add" bindtap="addCart">加入购物车</view>
+		<view class="buy" bindtap="nowBuy">立即购买</view>
+	</view>
+	<wj-action-sheet id="action-sheet" tops="75%">
+		<wj-good-sheet bind:closeSheet="closeSheet" skuInfo="{{skuInfo}}" price="{{price}}" confirm="add" bind:goconfirm="goConfirm" title="{{title}}" shopname="{{shopname}}" />
+	</wj-action-sheet>
+</view>

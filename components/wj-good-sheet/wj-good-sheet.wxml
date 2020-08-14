@@ -1,0 +1,37 @@
+<view class="detail-sheet">
+	<view class="top">
+		<view class="left">
+			<image class="image" src="{{currentImage}}" />
+		</view>
+		<view class="right">
+			<view class="price">{{price}}</view>
+			<view class="stock">库存 {{currentStock}}</view>
+			<text class="choice" wx:if="{{!isSelect}}">请选择：{{skuInfo.labels}}</text>
+			<text class="choice active" wx:else decode space="emsp">已选择：{{selectStyle}} {{selectSize}}</text>
+		</view>
+		<text class="iconfont icon-guanbi-copy" bindtap="closeSheet"></text>
+	</view>
+	<view class="select">
+		<block wx:for="{{showData.labels}}" wx:key="index">
+			<view class="item">
+				<view class="stitle">{{item}}</view>
+				<view class="scontent">
+					<block wx:for="{{showData.list[index]}}" wx:for-item="value" wx:for-index="indey" wx:key="indey">
+						<text bindtap="itemClick" data-indey="{{indey}}" data-index="{{index}}" data-value="{{value}}" class="sitem {{selectItems[index][indey] == 1?'active':''}}">{{value.name}}</text>
+					</block>
+				</view>
+			</view>
+		</block>
+		<view class="item">
+			<view class="stitle number">数量</view>
+			<wj-counter bind:handlenumber="handleNumber" />
+		</view>
+	</view>
+	<view class="menu" wx:if="{{confirm === 'select'}}">
+		<view class="add_cart" bindtap="addCart">加入购物车</view>
+		<view class="buy" bindtap="goBuy">立即购买</view>
+	</view>
+	<view class="sheet-bottom" wx:if="{{confirm === 'add'}}" bindtap="goConfirm">
+		确认
+	</view>
+</view>

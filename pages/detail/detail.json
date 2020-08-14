@@ -1,0 +1,22 @@
+{
+  "component": true,
+  "usingComponents": {
+    "wj-swiper": "/components/wj-swiper/wj-swiper",
+    "wj-slot-bar": "/components/wj-slot-bar/wj-slot-bar",
+    "wj-comment": "/components/wj-comment/wj-comment",
+    "wj-tab-control": "/components/wj-tab-control/wj-tab-control",
+    "wj-goods": "/components/wj-goods/wj-goods",
+    "wj-back-top": "/components/wj-back-top/wj-back-top",
+    "detail-titles": "./childCpn/detail-titles/detail-titles",
+    "detail-coupons": "./childCpn/detail-coupons/detail-coupons",
+    "detail-services": "./childCpn/detail-services/detail-services",
+    "detail-skuInfo": "./childCpn/detail-skuInfo/detail-skuInfo",
+    "detail-comment": "./childCpn/detail-comment/detail-comment",
+    "detail-shop": "./childCpn/detail-shop/detail-shop",
+    "detail-good": "./childCpn/detail-good/detail-good",
+    "detail-info": "./childCpn/detail-info/detail-info",
+    "detail-rule": "./childCpn/detail-rule/detail-rule",
+    "detail-menu": "./childCpn/detail-menu/detail-menu"
+
+  }
+}

@@ -1,0 +1,28 @@
+.popular{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30rpx;
+}
+
+.popular-item{
+  width: 20%;
+  text-align: center;
+  padding: 10rpx 0;
+  box-sizing: border-box;
+}
+
+.popular-img{
+  width: 100rpx;
+  height: 100rpx;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.popular-text{
+  font-size: 24rpx;
+  color: #666666;
+}
+
+

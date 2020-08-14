@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "wj-swiper": "/components/wj-swiper/wj-swiper",
+    "wj-tab-control": "/components/wj-tab-control/wj-tab-control",
+    "wj-popular": "/components/wj-popular/wj-popular",
+    "wj-goods": "/components/wj-goods/wj-goods",
+    "wj-back-top": "/components/wj-back-top/wj-back-top",
+    "home-recommend": "./childCpn/home-recommend/home-recommend"
+  },
+  "navigationBarTitleText": "购物街"
+}

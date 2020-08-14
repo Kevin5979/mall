@@ -1,0 +1,72 @@
+@import "../../assets/iconfont/iconfont.wxss";
+#cart {
+  width: 100%;
+  padding-bottom: 20rpx;
+  box-sizing: border-box;
+}
+
+.top-menu>view {
+  color: #999;
+  font-size: 34rpx;
+  padding-top: 20rpx;
+  padding-left: 30rpx;
+  box-sizing: border-box;
+}
+
+.main{
+  margin-bottom: 88rpx !important;
+}
+
+.bottom{
+  height: 88rpx;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 38rpx;
+  background-color: #fff;
+  z-index: 99;
+}
+
+.bottom .left{
+  color: #666;
+  font-size: 32rpx;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.bottom .icon-xuanze1{
+  margin-right: 20rpx;
+}
+
+.bottom .right{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.bottom .right .all-price{
+  color: #ff5777;
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-right: 20rpx;
+}
+
+.calc{
+  font-size: 32rpx;
+  padding: 8rpx 28rpx;
+  box-sizing: border-box;
+  border-radius: 24rpx;
+  background: #ff5777;
+  color: #fff;
+}
+
+.icon-xuanze{
+  font-size: 42rpx;
+  color: #ff5777;
+  margin-right: 20rpx;
+}

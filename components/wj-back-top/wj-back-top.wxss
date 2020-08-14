@@ -1,0 +1,19 @@
+@import "/assets/iconfont/iconfont.wxss";
+.back-top{
+  position: fixed;
+  right: 60rpx;
+  bottom: 110rpx;
+  z-index: 999;
+}
+
+.back-top .icon-fanhuidingbu{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 20rpx;
+  padding: 10rpx;
+  box-sizing: border-box;
+  font-size: 50rpx;
+  text-align: center;
+  color: #ff5777;
+  background-color: #fff;
+}

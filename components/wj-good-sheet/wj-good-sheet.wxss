@@ -1,0 +1,148 @@
+@import "../../assets/iconfont/iconfont.wxss";
+.detail-sheet {
+  width: 100%;
+  position: relative;
+}
+
+.detail-sheet .top {
+  width: 100%;
+  height: 230rpx;
+  padding: 0 26rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.icon-guanbi-copy {
+  position: absolute;
+  top: 20rpx;
+  right: 0;
+  color: #333;
+  padding: 10rpx;
+  box-sizing: border-box;
+  font-size: 38rpx;
+}
+
+.top .image {
+  width: 160rpx;
+  height: 240rpx;
+  position: relative;
+  top: -50rpx;
+  margin-right: 20rpx;
+}
+
+.top .right {
+  position: relative;
+  top: -24rpx;
+}
+
+.top .right .price {
+  font-size: 54rpx;
+  position: relative;
+  left: 20rpx;
+}
+
+.top .right .price::before {
+  content: "￥";
+  position: absolute;
+  top: 10rpx;
+  left: -20rpx;
+  font-size: 24rpx;
+}
+
+.top .right .stock {
+  font-size: 24rpx;
+  margin-bottom: 6rpx;
+}
+
+.top .right .choice {
+  font-size: 26rpx;
+}
+
+.select {
+  padding: 0 16rpx;
+  box-sizing: border-box;
+  height: 550rpx;
+  overflow: scroll;
+}
+
+.select .item {
+  margin-bottom: 40rpx;
+}
+
+.item .stitle {
+  font-size: 28rpx;
+  color: #5e5e5e;
+}
+
+.item .scontent {
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.scontent .sitem {
+  font-size: 32rpx;
+  color: #5e5e5e;
+  padding: 6rpx 14rpx;
+  box-sizing: border-box;
+  margin: 4rpx 16rpx;
+  border: 1rpx solid #5e5e5e;
+  border-radius: 10rpx;
+  text-align: center;
+}
+
+.scontent .active {
+  color: #ff5777;
+}
+
+.number {
+  margin-bottom: 20rpx;
+}
+
+.menu {
+  width: 100%;
+  height: 108rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: -108rpx;
+}
+
+.menu .add_cart {
+  width: 50%;
+  height: 100%;
+  line-height: 108rpx;
+  color: #ff5777;
+  background-color: #ffe6e8;
+  text-align: center;
+  font-size: 34rpx;
+}
+
+.menu .buy {
+  flex: 1;
+  height: 100%;
+  line-height: 108rpx;
+  color: #fff;
+  background: linear-gradient(90deg, #ff5777, #ff468f);
+  text-align: center;
+  font-size: 34rpx;
+}
+
+.choice.active {
+  color: #ff5777;
+}
+
+.sheet-bottom{
+  width: 100%;
+  height: 110rpx;
+  color: #fff;
+  font-size: 36rpx;
+  text-align: center;
+  line-height: 110rpx;
+  background-color: #ff5777;
+}

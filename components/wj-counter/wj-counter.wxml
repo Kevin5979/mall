@@ -1,0 +1,5 @@
+<view class="counter">
+	<view class="sub iconfont icon-jian {{currentNumber <= 1 ? 'disable':''}}" bindtap="handleSub"></view>
+	<view class="num">{{currentNumber}}</view>
+	<view class="add iconfont icon-jia" bindtap="handleAdd"></view>
+</view>

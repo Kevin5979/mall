@@ -1,0 +1,28 @@
+<view class="no-login">
+	<view class="title">
+		登录
+	</view>
+	<button class="to-login" open-type="getUserInfo" bindgetuserinfo="toLogin">
+		<text class="iconfont icon-weixin"></text>
+		<text class="wx-login">微信登录</text>
+	</button>
+	<view class="iconfont icon-hengxian"></view>
+	<view class="other">其他登录方式</view>
+	<view class="login-list">
+		<view bindtap="otherLogin">
+			<view class="iconfont icon-QQdenglu"></view>
+			<view class="text">QQ登录</view>
+		</view>
+		<view bindtap="otherLogin">
+			<view class="iconfont icon-shoujidenglu"></view>
+			<view class="text">免密登录</view>
+		</view>
+		<view bindtap="otherLogin">
+			<view class="iconfont icon-zhanghao-denglu-"></view>
+			<view class="text">账号登录</view>
+		</view>
+
+
+	</view>
+
+</view>

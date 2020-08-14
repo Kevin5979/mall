@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "category-sidebar": "./childCpn/category-sidebar/category-sidebar",
+    "category-main": "./childCpn/category-main/category-main"
+  }
+}

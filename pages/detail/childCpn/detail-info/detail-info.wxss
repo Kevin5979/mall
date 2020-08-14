@@ -1,0 +1,38 @@
+/* 商品参数 */
+.detail-info {
+  margin-top: 20rpx;
+  padding: 0 26rpx;
+}
+
+.detail-info .title {
+  font-size: 30rpx;
+  color: #999;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+  border-left: 10rpx solid #ff5777;
+}
+
+.detail-info .info-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8rpx 0;
+  box-sizing: border-box;
+}
+
+.info-item .key {
+  width: 200rpx;
+  font-size: 28rpx;
+  padding: 0 10rpx;
+  box-sizing: border-box;
+}
+
+.info-item .value {
+  flex: 1;
+  font-size: 28rpx;
+}
+
+.detail-info .active {
+  background-color: #eee;
+}

@@ -1,0 +1,22 @@
+<view id="cart">
+	<view class="top-menu">
+		<view>编辑</view>
+	</view>
+	<view class="main">
+		<block wx:for="{{cart}}" wx:key="index">
+			<cart-item class="cart-item" bind:recalc="reCalc" bind:itemSelect="itemSelect" item="{{item}}" key="{{index}}"/>
+		</block>
+	</view>
+	<view class="bottom">
+		<view class="left" bindtap="selectAll">
+			<view class="iconfont {{isSelectAll? 'icon-xuanze': 'icon-xuanze1'}}"></view>
+			<view>全选 ({{itemNum}})</view>
+		</view>
+		<view class="right">
+			<view class="all-price">
+				￥{{allPrice}}
+			</view>
+			<view bindtap="topay" class="calc">结算</view>
+		</view>
+	</view>
+</view>

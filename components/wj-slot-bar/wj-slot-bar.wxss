@@ -1,0 +1,19 @@
+@import "../../assets/iconfont/iconfont";
+.slot-bar{
+  padding: 10rpx 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 16rpx solid #eee;
+}
+
+.slot-right{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.slot-right .icon-xiaoyu-copy{
+  font-size: 40rpx;
+  color: #999999;
+}

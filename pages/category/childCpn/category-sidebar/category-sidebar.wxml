@@ -1,0 +1,10 @@
+<!-- 分类侧边栏 -->
+<view class="category-sidebar">
+	<view class="container">
+		<block wx:for="{{sideList}}" wx:key="index">
+			<view class="item {{currentIndex === index ? 'active' : ''}}" bindtap="itemClick" data-index="{{index}}">
+				{{item.title}}
+			</view>
+		</block>
+	</view>
+</view>

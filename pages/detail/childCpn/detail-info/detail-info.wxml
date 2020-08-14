@@ -1,0 +1,9 @@
+<view class="detail-info">
+	<view class="title">{{info.key}}</view>
+	<block wx:for="{{info.set}}" wx:key="index">
+		<view class="info-item {{index % 2 === 0 ? 'active' : ''}}">
+			<text class="key">{{item.key}}</text>
+			<text class="value">{{item.value}}</text>
+		</view>
+	</block>
+</view>

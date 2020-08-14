@@ -1,0 +1,53 @@
+<wxs src="../../utils/index.wxs" module="utils" />
+<view class="detail-page">
+<scroll-view scroll-y class="scroll" scroll-into-view="{{toIndex}}" scroll-with-animation="true" enable-back-to-top="true" bind:scroll="viewScroll" scroll-top="{{scrollHeight}}" >
+
+<!-- 轮播图 -->
+<wj-swiper detail-swiper="swiper" list="{{topImages}}"/>
+
+<!-- 标题 -->
+<detail-titles titles="{{titles}}"/>
+
+<!-- 优惠券 -->
+<detail-coupons coupons="{{coupons}}"/>
+
+<!-- 服务 -->
+<detail-services services="{{services}}"/>
+
+<!-- 选择商品 -->
+<detail-skuInfo skuInfo="{{skuInfo}}" price="{{titles.lowNowPrice}}" title="{{titles.title}}" shopname="{{shop.name}}" goodsID="{{goodsID}}" shopID="{{shopID}}" coupons="{{coupons}}" />
+
+<!-- 买家评论 -->
+<detail-comment comment="{{comment}}"/>
+
+<!-- 店铺信息 -->
+<detail-shop shop="{{shop}}"/>
+
+<!-- 商品详情 -->
+<view id="detail-goods">
+	<detail-good bind:tabclick="tabClick" detailgood="{{detailgood}}"/>
+</view>
+
+<!-- 商品参数 -->
+<view id="detail-info">
+	<detail-info info="{{info}}"/>
+</view>
+
+<!-- 商品尺寸 -->
+<detail-rule rule="{{rule}}"/>
+
+<!-- 推荐商品 -->
+<view id="detail-recommend" class="detail-recommend">
+  <view class="hot">热卖推荐</view>
+	<wj-goods goods="{{recommend}}"/>
+</view>
+
+<!-- 底部菜单 -->
+<view class="detail-menu">
+  <detail-menu skuInfo="{{skuInfo}}" price="{{titles.lowNowPrice}}" title="{{titles.title}}" shopname="{{shop.name}}" goodsID="{{goodsID}}" shopID="{{shopID}}" coupons="{{coupons}}" />
+</view>
+
+<!-- 回到顶部 -->
+<wj-back-top wx:if="{{showBackTop}}" bind:backtop="backTop"/>
+</scroll-view>
+</view>

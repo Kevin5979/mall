@@ -1,0 +1,38 @@
+.category-sidebar {
+  width: 180rpx;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.category-sidebar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.container {
+  width: 180rpx;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item {
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  color: #666;
+  font-size: 28rpx;
+  box-sizing: border-box;
+  border-left: 8rpx solid transparent;
+}
+
+.item.active {
+  color: #ff5777;
+  background-color: #fff;
+  border-color: #ff5777;
+  font-weight: 600;
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "wj-counter": "/components/wj-counter/wj-counter",
+    "cart-item": "./childCpn/cart-item/cart-item"
+  },
+  "navigationBarTitleText": "购物车"
+}

@@ -1,0 +1,14 @@
+<view class="home-page">
+	<!-- 轮播图 -->
+	<wj-swiper list="{{banners}}" ext-class="h-class" />
+	<!-- 推荐数据 -->
+	<home-recommend list="{{recommends}}" />
+	<!-- 本周流行 -->
+	<wj-popular popular="{{popular}}" />
+	<!-- 导航栏 -->
+	<wj-tab-control titles="{{titles}}" bind:itemClick="handleClick" />
+	<!-- 商品展示 -->
+	<wj-goods id="show-goods" goods="{{goods[currentType].list}}" />
+	<!-- 回到顶部 -->
+	<wj-back-top wx:if="{{showBackTop}}" />
+</view>

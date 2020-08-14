@@ -1,0 +1,13 @@
+<!-- 插槽导航栏 -->
+<view class="slot-bar" bindtap="barClick">
+	<view class="slot-left">
+		<slot name="left"></slot>
+	</view>
+	<view class="slot-center">
+		<slot name="center"></slot>
+	</view>
+	<view class="slot-right">
+		<slot name="right"></slot>
+		<view class="iconfont icon-xiaoyu-copy"></view>
+	</view>
+</view>

@@ -1,0 +1,23 @@
+<wxs src="../../utils/index.wxs" module="utils" />
+<view class="comment" wx:if="{{list}}">
+	<block wx:for="{{list}}" wx:key="index">
+		<view class="user">
+			<image class="user-pic" src="{{item.user.avatar}}"></image>
+			<text class="uname">{{item.user.uname}}</text>
+		</view>
+		<view class="comment-text">
+			<view class="text">{{item.content}}</view>
+			<view class="images" wx:if="{{item.images}}">
+				<block wx:for="{{item.images}}" wx:for-index="indey" wx:for-item="value" wx:key="indey">
+					<image class="image" src="{{value}}" bindtap="previewImage" data-img="{{value}}"></image>
+				</block>
+			</view>
+		</view>
+		<view class="extraInfo">{{item.extraInfo}}</view>
+		<view class="style">{{item.style}}</view>
+		<view class="created">{{utils.dateFormat(item.created)}}</view>
+	</block>
+</view>
+<view wx:else class="no-comment">
+	暂无评价
+</view>

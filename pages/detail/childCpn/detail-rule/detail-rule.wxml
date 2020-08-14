@@ -1,0 +1,13 @@
+<view class="detail-rule" wx:if="{{rule}}">
+	<view class="title">{{rule.key}}</view>
+	<view class="desc">{{rule.disclaimer}}</view>
+	<block wx:for="{{rule.tables}}" wx:key="index">
+		<block wx:for="{{item}}" wx:for-item="value" wx:for-index="indey" wx:key="indey">
+			<view class="rule-item {{indey % 2 === 0 ? 'active' : ''}}">
+				<block wx:for="{{value}}" wx:for-item="val" wx:for-index="indez" wx:key="indez">
+					<text class="item">{{val}}</text>
+				</block>
+			</view>
+		</block>
+	</block>
+</view>

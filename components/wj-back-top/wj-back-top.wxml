@@ -1,0 +1,4 @@
+<!--components/wj-back-top/wj-back-top.wxml-->
+<view class="back-top" bindtap="handleBackTop" >
+  <view class="iconfont icon-fanhuidingbu"></view>
+</view>

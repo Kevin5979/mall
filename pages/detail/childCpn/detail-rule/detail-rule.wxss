@@ -1,0 +1,34 @@
+/* 商品尺寸 */
+.detail-rule {
+  margin-top: 40rpx;
+  padding: 0 26rpx;
+}
+
+.detail-rule .title {
+  font-size: 30rpx;
+  color: #999;
+  padding-bottom: 20rpx;
+  box-sizing: border-box;
+}
+
+.detail-rule .desc {
+  color: #333;
+  font-size: 28rpx;
+  margin-bottom: 30rpx;
+}
+
+.detail-rule .rule-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.rule-item .item {
+  width: 100rpx;
+  text-align: center;
+}
+
+.detail-rule .active {
+  background-color: #eee;
+}

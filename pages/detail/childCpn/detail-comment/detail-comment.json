@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "wj-comment": "/components/wj-comment/wj-comment"
+  }
+}

@@ -1,0 +1,29 @@
+<wxs src="../../../../utils/index.wxs" module="utils"/>
+<view class="detail-shop">
+	<view class="shop-logo">
+		<image class="image" src="{{shop.shopLogo}}"></image>
+	</view>
+	<view class="shop-right">
+		<view class="top">
+			<text>{{shop.name}}</text>
+			<view class="into-shop">
+				<text class="into">进店</text>
+				<text class="iconfont icon-xiaoyu-copy"></text>
+			</view>
+		</view>
+		<view class="goods">在架商品 {{shop.cGoods}}</view>
+		<view class="center">
+			<text class="cfans">{{utils.handleNumber(shop.cFans)}}人关注</text>
+			<text class="sells">累计销量{{utils.handleNumber(shop.cSells)}}</text>
+			<text class="go">24小时发货100%</text>
+		</view>
+		<view class="scores">
+			<block wx:for="{{shop.score}}" wx:key="index">
+				<view class="score-item {{item.isBetter ? 'high': 'low'}}">
+					<text class="name">{{item.name}} </text>
+					<text class="score">{{item.score}}</text>
+				</view>
+			</block>
+		</view>
+	</view>
+</view>

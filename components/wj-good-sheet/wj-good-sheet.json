@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "wj-action-sheet": "/components/wj-action-sheet/wj-action-sheet",
+    "wj-counter": "/components/wj-counter/wj-counter"
+  }
+}

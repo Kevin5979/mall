@@ -1,0 +1,92 @@
+/* 标题 */
+.detail-titles {
+  border-bottom: 16rpx solid #eeeeee;
+  background-color: #ffffff;
+}
+
+.detail-price {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 16rpx 40rpx;
+  box-sizing: border-box;
+}
+
+.low-price::before {
+  content: "￥";
+  font-size: 20rpx;
+  position: absolute;
+  top: 10rpx;
+  left: -20rpx;
+}
+
+.low-price {
+  font-size: 58rpx;
+  position: relative;
+}
+
+.old {
+  margin-left: 10rpx;
+}
+
+.old .old-price {
+  font-size: 26rpx;
+  opacity: 0.7;
+  display: block;
+  text-decoration: line-through;
+  color: #999;
+}
+
+.old .discount {
+  font-size: 22rpx;
+  text-align: center;
+  margin-top: 10rpx;
+  color: rgb(255, 34, 85);
+  background-color: rgb(255, 232, 238);
+}
+
+.detail-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-title .title {
+  width: 520rpx;
+  font-size: 28rpx;
+  padding-left: 30rpx;
+  box-sizing: border-box;
+}
+
+.detail-title .help {
+  font-size: 24rpx;
+  text-align: center;
+  width: 150rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #999999;
+  border-radius: 15rpx 0 0 15rpx;
+  background-color: rgba(0, 0, 0, .05);
+  display: flex;
+  justify-content: start;
+}
+
+.detail-bottom {
+  padding: 10rpx 30rpx;
+  padding-bottom: 15rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-bottom .express,
+.detail-bottom .address {
+  font-size: 24rpx;
+  color: #999999;
+}
+
+.help .icon-duorenyonghu-copy {
+  font-size: 30rpx;
+  color: #999;
+  margin: 0 15rpx;
+}

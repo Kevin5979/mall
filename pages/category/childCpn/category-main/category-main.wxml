@@ -1,0 +1,13 @@
+<view class="category-main">
+	<view class="menu">
+		<block wx:for="{{itemList}}" wx:key="index">
+			<view class="item">
+				<image class="image" src="{{item.image}}" mode="widthFix" lazy-load />
+				<view class="title">{{item.title}}</view>
+			</view>
+		</block>
+	</view>
+	<view class="goods">
+		<wj-goods goods="{{goods}}" />
+	</view>
+</view>

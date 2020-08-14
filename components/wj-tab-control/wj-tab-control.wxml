@@ -1,0 +1,7 @@
+<view class="tab-control ext-class" bind:tap="tabClick">
+	<block wx:for="{{titles}}" wx:key="index">
+		<view class="tab-item {{index === currentindex ? 'active':''}}" data-index="{{index}}">
+			<text class="tab-item-content" data-index="{{index}}">{{item}}</text>
+		</view>
+	</block>
+</view>

@@ -1,0 +1,7 @@
+<view class="detail-comment">
+	<view class="comment-title" bindtap="commentClick">
+		<view class="title">买家评价 {{comment.cRate}}</view>
+		<view class="iconfont icon-xiaoyu-copy"></view>
+	</view>
+	<wj-comment list="{{comment.list}}" />
+</view>

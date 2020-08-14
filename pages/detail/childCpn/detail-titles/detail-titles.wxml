@@ -1,0 +1,20 @@
+<view class="detail-titles">
+	<view class="detail-price">
+		<view class="low-price">{{titles.lowNowPrice}}</view>
+		<view class="old">
+			<view class="old-price">{{titles.oldPrice}}</view>
+			<view class="discount">{{titles.discountDesc}}</view>
+		</view>
+	</view>
+	<view class="detail-title">
+		<view class="title">{{titles.title}}</view>
+		<view class="help">
+			<view class="iconfont icon-duorenyonghu-copy"></view>
+			<view>帮我选</view>
+		</view>
+	</view>
+	<view class="detail-bottom">
+		<text class="express">快递 0.00元</text>
+		<text class="address">{{titles.address}}</text>
+	</view>
+</view>

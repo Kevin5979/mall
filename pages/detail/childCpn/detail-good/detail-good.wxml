@@ -1,0 +1,16 @@
+<view class="detail-good">
+	<wj-tab-control titles="{{tabItems}}" ext-class="d-class" bind:itemClick="tabClick"/>
+	<view class="good-title">
+		<view class="top-left"></view>
+		<view class="desc">{{detailgood.desc}}</view>
+		<view class="bottom-right"></view>
+	</view>
+	<view class="info">
+			<view class="key">{{detailgood.detailImage[0].key}}</view>
+			<view class="list">
+				<block wx:for="{{detailgood.detailImage[0].list}}" wx:key="index">
+					<image class="img" src="{{item}}" mode="widthFix" lazy-load bindtap="previewImage" data-img="{{item}}" />
+				</block>
+			</view>
+	</view>
+</view>

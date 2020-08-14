@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "profile-no-login": "./childCpn/profile-no-login/profile-no-login"
+  }
+}

@@ -1,0 +1,15 @@
+<view class="item">
+	<view class="item-top">
+		<view class="left">
+			<view class="iconfont {{isSelectAll ? 'icon-xuanze' : 'icon-xuanze1'}}" bindtap="selectShop"></view>
+			<view class="shopname">{{itemData[0].shopname}}</view>
+		</view>
+		<view class="discount" wx:if="{{itemData[0].coupons.length > 0}}">
+			<view class="text">领劵</view>
+			<view class="iconfont icon-xiaoyu-copy"></view>
+		</view>
+	</view>
+	<block wx:for="{{itemData}}" wx:for-item="value" wx:for-index="indey" wx:key="indey">
+		<cart-list value="{{value}}" indey="{{indey}}" key="{{key}}" isSelectAll="{{isSelectAll}}" bind:recalc="reCalc" bind:itemSelect="itemSelect" />
+	</block>
+</view>

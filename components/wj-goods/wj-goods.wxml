@@ -1,0 +1,12 @@
+<view class="goods">
+	<view class="left-items">
+		<block wx:for="{{goods}}" wx:key="index">
+			<wj-goods-left wx:if="{{index % 2 === 0}}" class="goods-item" item="{{item}}" />
+		</block>
+	</view>
+	<view class="right-items">
+		<block wx:for="{{goods}}" wx:key="index">
+			<wj-goods-right wx:if="{{index % 2 !== 0}}" class="goods-item" item="{{item}}" />
+		</block>
+	</view>
+</view>

@@ -1,0 +1,52 @@
+@import "../../../../assets/iconfont/iconfont.wxss";
+.item {
+  margin: 20rpx;
+  background-color: #fff;
+  border-radius: 16rpx;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+}
+
+.item-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 20rpx 20rpx 0;
+  box-sizing: border-box;
+}
+
+.item-top .left {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.shopname {
+  margin-left: 14rpx;
+  font-weight: bold;
+  font-size: 34rpx;
+}
+
+.icon-xuanze1 {
+  color: #ddd;
+  font-size: 42rpx;
+}
+
+.discount {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.discount .text {
+  font-size: 30rpx;
+  color: #ff5777;
+}
+
+.icon-xiaoyu-copy {
+  color: #ff5777;
+}
+
+.icon-xuanze{
+  font-size: 42rpx;
+  color: #ff5777;
+}

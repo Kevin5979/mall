@@ -1,0 +1,5 @@
+/* 选择商品 */
+.left-skuInfo {
+  font-size: 30rpx;
+  color: #999;
+}

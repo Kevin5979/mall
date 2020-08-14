@@ -1,0 +1,83 @@
+/* 店铺 */
+.detail-shop {
+  padding: 20rpx 20rpx 16rpx 16rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  border-bottom: 16rpx solid #eee;
+}
+
+.shop-logo .image {
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 16rpx;
+}
+
+.shop-right {
+  flex: 1;
+}
+
+.shop-right .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 34rpx;
+}
+
+.into-shop {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.into-shop .into {
+  font-size: 26rpx;
+}
+
+.shop-right .goods {
+  margin-top: 6rpx;
+  font-size: 24rpx;
+}
+
+.shop-right .center {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 12rpx;
+}
+
+.shop-right .center .cfans,
+.shop-right .center .sells,
+.shop-right .center .go {
+  font-size: 22rpx;
+  color: #ff5777;
+  margin-right: 16rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 12rpx;
+  padding: 2rpx 6rpx;
+  box-sizing: border-box;
+}
+
+.scores {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.score-item {
+  margin-right: 26rpx;
+}
+
+.score-item .name,
+.score-item .score {
+  font-size: 24rpx;
+}
+
+.high {
+  color: #fe002f;
+}
+
+.low {
+  color: #444444;
+}

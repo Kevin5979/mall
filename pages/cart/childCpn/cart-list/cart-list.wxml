@@ -1,0 +1,21 @@
+<view class="item-main">
+	<view bindtap="selectGood" class="iconfont {{listValue.isSelect ? 'icon-xuanze' : 'icon-xuanze1'}}"></view>
+	<view class="main-right">
+		<view class="good-img">
+			<image class="img" src="{{listValue.img}}" />
+		</view>
+		<view class="good-detail">
+			<view class="title" bindtap="toDetail" data-iid="{{listValue.goodsID}}">{{listValue.title}}</view>
+			<view class="style">
+				样式：{{listValue.style}}; 尺码：{{listValue.size}}
+				<text class="iconfont icon-xiangxiajiantou"></text>
+			</view>
+			<view class="price">
+				<view>￥{{listValue.price}}</view>
+				<view>
+					<wj-counter bind:handlenumber="handleNumber" num="{{listValue.counter}}" />
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

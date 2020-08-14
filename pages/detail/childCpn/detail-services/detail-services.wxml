@@ -1,0 +1,43 @@
+<view class="detail-services">
+	<wj-slot-bar bind:handleclick="servicesClick">
+		<view slot="left" class="left-services">
+			<block wx:for="{{services}}" wx:key="index">
+				<view class="services">
+					<view class="iconfont icon-xuanzhong"></view>
+					<text>{{item}}</text>
+				</view>
+			</block>
+		</view>
+	</wj-slot-bar>
+	<!-- 弹出层 -->
+	<wj-action-sheet id="action-sheet" tops="{{sheetHeight}}">
+		<view class="service-sheet">
+			<view class="title">服务说明</view>
+			<view class="list">
+				<view class="item">
+					<view class="l-title">7天无理由退货</view>
+					<view class="l-desc">
+						物流签收后7天内买家可无理由退货，需满足退货条件
+					</view>
+				</view>
+				<view class="item">
+					<view class="l-title">延误必赔</view>
+					<view class="l-desc">
+						极速发货、送货保障，若发货时间晚于商家承诺时间或快递派送时间晚于平台标准，可获得延误补贴。
+					</view>
+				</view>
+				<view class="item">
+					<view class="l-title">退货补运费</view>
+					<view class="l-desc">
+						用户发起退货且绑定提现银行卡，可获6-18元运费补贴
+					</view>
+				</view>
+				<view class="item">
+					<view class="l-title">全国包邮</view>
+				</view>
+			</view>
+			<text class="iconfont icon-guanbi-copy" bindtap="closeSheet"></text>
+		</view>
+	</wj-action-sheet>
+
+</view>

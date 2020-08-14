@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "wj-action-sheet": "/components/wj-action-sheet/wj-action-sheet",
+    "wj-good-sheet": "/components/wj-good-sheet/wj-good-sheet"
+  }
+}

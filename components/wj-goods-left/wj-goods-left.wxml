@@ -1,0 +1,15 @@
+<view class="goods-item" bindtap="itemClick">
+	<image wx:if="{{item.show}}" class="goods-item-img" src="{{item.show.img}}" mode="widthFix" lazy-load />
+	<image wx:elif="{{item.image}}" class="goods-item-img" src="{{item.image}}" mode="widthFix" lazy-load />
+	<image wx:else class="goods-item-img" src="{{item.img}}" mode="widthFix" lazy-load />
+	<view class="goods-item-desc">
+		<view class="title">{{item.title}}</view>
+		<view class="info">
+			<text class="price">￥{{item.price}}</text>
+			<view class="cfav">
+				<text class="iconfont icon-shoucang1"></text>
+				{{item.cfav}}
+			</view>
+		</view>
+	</view>
+</view>

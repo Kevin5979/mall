@@ -1,0 +1,10 @@
+<view class="detail-skuInfo">
+	<wj-slot-bar bind:handleclick="skuInfoClick">
+		<view slot="left" class="left-skuInfo">
+			请选择：{{skuInfo.labels}}
+		</view>
+	</wj-slot-bar>
+	<wj-action-sheet id="action-sheet" tops="75%">
+		<wj-good-sheet bind:closeSheet="closeSheet" skuInfo="{{skuInfo}}" price="{{price}}" confirm="select" bind:addcart="addCart" bind:gobuy="goBuy" title="{{title}}" shopname="{{shopname}}"/>
+	</wj-action-sheet>
+</view>

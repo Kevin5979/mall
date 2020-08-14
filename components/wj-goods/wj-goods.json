@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "wj-goods-left": "/components/wj-goods-left/wj-goods-left",
+    "wj-goods-right": "/components/wj-goods-right/wj-goods-right"
+  }
+}

@@ -1,0 +1,8 @@
+<view class="popular">
+  <block wx:for="{{popular}}" wx:key="index">
+    <view class="popular-item">
+      <image class="popular-img" src="{{item.image}}" mode="widthFix" lazy-load/>
+      <text class="popular-text">{{item.title}}</text>
+    </view>
+  </block>
+</view>

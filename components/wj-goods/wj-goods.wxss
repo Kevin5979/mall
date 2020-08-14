@@ -1,0 +1,17 @@
+.goods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 20rpx;
+}
+
+.goods .goods-item {
+  width: 100%;
+  margin-top: 16rpx;
+}
+
+.goods>.left-items,
+.goods>.right-items{
+  width: 50%;
+}

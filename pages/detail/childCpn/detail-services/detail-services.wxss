@@ -1,0 +1,66 @@
+/* 服务 */
+.detail-services .left-services {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 6rpx 0;
+  box-sizing: border-box;
+}
+
+.detail-services .left-services .services {
+  display: flex;
+  align-items: center;
+  padding: 2rpx 10rpx;
+  font-size: 22rpx;
+  box-sizing: border-box;
+  color: #666;
+}
+
+.icon-xuanzhong {
+  font-weight: bolder;
+  color: #ff5777;
+}
+
+.service-sheet {
+  padding: 30rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.service-sheet .icon-guanbi-copy{
+  position: absolute;
+  top: 30rpx;
+  right: -10rpx;
+  font-size: 42rpx;
+  color: #999;
+  padding: 10rpx;
+  box-sizing: border-box;
+  z-index: 9;
+}
+
+.service-sheet .title {
+  color: #999;
+  text-align: center;
+  font-size: 38rpx;
+  padding: 26rpx 0;
+}
+
+.service-sheet .item{
+  padding: 26rpx 0;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #eee;
+}
+
+.service-sheet .item:nth-child(4){
+  border-bottom: none;
+}
+
+.item .l-title {
+  font-size: 32rpx;
+  color: #333;
+}
+
+.item .l-desc {
+  color: #999;
+  font-size: 26rpx;
+  margin-top: 10rpx;
+}

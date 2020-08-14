@@ -1,0 +1,9 @@
+<view id="category">
+	<!-- 侧边导航 -->
+	<view class="left">
+		<category-sidebar sideList="{{sideList}}" bind:sideClick="sideClick" />
+	</view>
+	<view class="right">
+		<category-main itemList="{{itemList}}" goods="{{goods}}" />
+	</view>
+</view>

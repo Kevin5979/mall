@@ -1,0 +1,22 @@
+/* 买家评价 */
+.comment-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50rpx;
+  box-sizing: border-box;
+}
+
+.comment-title .title {
+  font-size: 30rpx;
+  color: #999;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+}
+
+.icon-xiaoyu-copy {
+  color: #999;
+  font-size: 40rpx;
+  margin-right: 20rpx;
+}

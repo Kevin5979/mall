@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "wj-tab-control":"/components/wj-tab-control/wj-tab-control"
+  }
+}

@@ -1,0 +1,26 @@
+.recommend {
+  width: 100%;
+  display: flex;
+  margin-top: 30rpx;
+  padding-bottom: 20rpx;
+  box-sizing: border-box;
+  border-bottom: 16rpx solid #eeeeee;
+}
+
+.recommend-item {
+  flex: 1;
+  text-align: center;
+}
+
+.recommend-item .recommend-img {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.recommend-item .recommend-text {
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}

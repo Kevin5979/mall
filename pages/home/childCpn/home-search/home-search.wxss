@@ -1,0 +1,56 @@
+@import '../../../../assets/iconfont/iconfont.wxss';
+
+.search{
+  background-color: #fff;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 16rpx;
+  box-sizing: border-box;
+  margin: 16rpx 0;
+}
+
+.icon-gengduo{
+  color: #ddd;
+  font-size: 70rpx;
+  display:inline-block;
+  font-weight: 100;
+  transform: scale(1.2,1.3);
+}
+
+.center{
+  flex: 1;
+  height: 66rpx;
+}
+
+.center{
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.icon-fangdajing{
+  position: absolute;
+  font-size: 32rpx;
+  color: #999;
+  top: 20rpx;
+  left: 36rpx;
+  font-weight: bold;
+}
+
+.inp{
+  background-color: #eee;
+  text-indent: 50rpx;
+  padding: 6rpx 18rpx;
+  box-sizing: border-box;
+  font-size: 32rpx;
+  height: 100%;
+  border-radius: 8rpx;
+}
+
+.icon-xiaoxi1{
+  font-size: 50rpx;
+  padding: 0 10rpx;
+  box-sizing: border-box;
+  color: #999;
+}

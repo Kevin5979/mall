@@ -1,0 +1,19 @@
+<view class="banner">
+	<view class="top">
+		<text class="title">{{title}}</text>
+		<text class="centent">{{content}}</text>
+	</view>
+	<view class="bottom">
+		<block wx:for="{{banner}}" wx:key="index">
+			<view class="item">
+				<view class="b-top">
+					<image class="img" src="{{item.shopLogoCustomize}}" mode="widthFix" lazy-load />
+				</view>
+				<view class="b-bottom">
+					<view class="shopname">{{item.shopName}}</view>
+					<view class="shopsale">{{item.shopSale}}已种草</view>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>

@@ -1,0 +1,14 @@
+<view class="banner">
+	<block wx:for="{{banner}}" wx:key="index">
+		<view class="item">
+			<view class="top">
+				<image class="img" src="{{item.image}}" mode="aspectFill" lazy-load />
+				<view class="sale">已售{{item.itemSale}}件</view>
+			</view>
+			<view class="bottom">
+				<view class="new-price">￥{{item.discountPrice}}</view>
+				<view class="price">{{item.price}}</view>
+			</view>
+		</view>
+	</block>
+</view>

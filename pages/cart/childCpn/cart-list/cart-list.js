@@ -27,7 +27,7 @@ Component({
   },
   methods: {
     toDetail(event) {
-      const iid = event.target.dataset.iid
+      const iid = event.currentTarget.dataset.iid
       iid && wx.navigateTo({
         url: `/pages/detail/detail?iid=${iid}`
       })

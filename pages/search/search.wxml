@@ -1,0 +1,36 @@
+<view class="search">
+	<view class="top">
+		<input class="inp {{isFocus ? 'active' : ''}}" focus placeholder="{{placeholder}}" bindfocus="toggleClick" bindblur="toggleClick" bindinput="inputClick" />
+		<view class="to-search" bindtap="toSearch">搜索</view>
+	</view>
+	<view class="history">
+		<view class="top-line">
+			<view class="left">
+				<view class="iconfont icon-fangdajing"></view>
+				<view>历史搜索</view>
+			</view>
+			<view class="right">
+				<view bindtap="delete" class="iconfont icon-shanchu"></view>
+			</view>
+		</view>
+		<view class="content">
+			<view wx:if="{{searchHistory.length === 0}}">暂无历史搜索</view>
+			<view wx:else class="keys search">
+				<block wx:for="{{searchHistory}}" wx:key="index">
+					<view bindtap="itemClick" data-item="{{item}}" class="item">{{item}}</view>
+				</block>
+			</view>
+		</view>
+	</view>
+	<view class="hot-key">
+		<view class="top-line">
+			<text class="iconfont icon-wujiaoxingxingxing"></text>
+			<text>热门搜索</text>
+		</view>
+		<view class="keys">
+			<block wx:for="{{keyWorks}}" wx:key="index">
+				<view bindtap="itemClick" data-item="{{item}}" class="item {{colors[index] !== '' ? 'active':''}}">{{item}}</view>
+			</block>
+		</view>
+	</view>
+</view>

@@ -1,4 +1,6 @@
 <view class="home-page">
+	<!-- 搜索框 -->
+	<home-search />
 	<!-- 轮播图 -->
 	<wj-swiper list="{{banners}}" ext-class="h-class" />
 	<!-- 推荐数据 -->

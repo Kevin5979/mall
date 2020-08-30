@@ -5,5 +5,13 @@ Component({
       type: Array,
       value: []
     }
+  },
+  methods: {
+    recommendClick() {
+      wx.showToast({
+        title: '暂无数据',
+        icon: "none"
+      })
+    }
   }
 })

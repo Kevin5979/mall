@@ -1,0 +1,16 @@
+<view class="item">
+	<view class="top">
+		<image class="image" src="{{item.img}}" lazy-load />
+		<view class="sale">已售{{item.sale}}件</view>
+	</view>
+	<view class="middle">
+		<view class="title">{{item.title}}</view>
+		<view class="p">
+			<view class="nprice">新人价</view>
+			<view class="price">￥{{item.price}}</view>
+		</view>
+	</view>
+	<view class="bottom">
+		<view class="bug">立即抢购</view>
+	</view>
+</view>

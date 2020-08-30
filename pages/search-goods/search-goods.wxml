@@ -1,0 +1,26 @@
+<view class="search-goods">
+	<view class="top">
+		<view class="inp">
+			<input class="input" value="{{key}}" bindfocus="focusClick" />
+			<view class="iconfont icon-fangdajing"></view>
+		</view>
+    <view class="cart" bindtap="toCart">
+      <view class="iconfont icon-gouwuchekong"></view>
+    </view>
+    
+	</view>
+  <view class="menu">
+    <view class="{{selectIndex == 0 ? 'active': ''}}" bindtap="itemClick" data-index="0">综合</view>
+    <view class="{{selectIndex == 1 ? 'active': ''}}" bindtap="itemClick" data-index="1">销量</view>
+    <view class="{{selectIndex == 2 ? 'active': ''}}" bindtap="itemClick" data-index="2">新品</view>
+    <view bindtap="selectPrice">
+      <text>价格</text>
+      <text class="iconfont icon-xiangxiajiantou"></text>
+    </view>
+  </view>
+  <view>
+    <wj-goods goods="{{list}}" />
+  </view>
+  <!-- 回到顶部 -->
+	<wj-back-top wx:if="{{showBackTop}}" />
+</view>

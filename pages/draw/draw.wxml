@@ -1,0 +1,90 @@
+<wxs src="../../utils/index.wxs" module="utils" />
+<view class="draw">
+	<view class="top">
+		<image class="top-img" src="https://s10.mogucdn.com/mlcdn/c45406/200820_41e998i5gb1eh52la089klfde0551_752x475.jpg_999x999.v1c0.81.webp" lazy-load />
+		<image class="top-img2" src="https://s10.mogucdn.com/mlcdn/c45406/200824_4l2293462969gagdi17ea8cid5kla_745x327.png_999x999.v1c0.81.webp" lazy-load />
+		<image class="top-img3" src="https://s10.mogucdn.com/mlcdn/c45406/200825_6i0584g61178g53dikk55giiald9a_750x456.png_999x999.v1c0.81.webp" lazy-load />
+		<image class="top-img4" src="https://s10.mogucdn.com/mlcdn/c45406/200825_3f6i53a04b9ef3le7221a55hb4hb6_750x426.png_999x999.v1c0.81.webp" lazy-load />
+		<image class="top-img5" src="https://s10.mogucdn.com/mlcdn/c45406/200825_1347118feaielkdf79k7j1a3id104_750x78.png_999x999.v1c0.81.webp" lazy-load />
+		<image class="top-img6" src="https://s10.mogucdn.com/mlcdn/c45406/200825_81126lk2915l2g7jgec019757c07j_750x256.png_999x999.v1c0.81.webp" lazy-load />
+		<image class="top-img7" src="https://s10.mogucdn.com/mlcdn/c45406/200814_6ihl80822cbjik91gdfebkc2ik6ci_750x53.jpg_999x999.v1c0.81.webp" lazy-load />
+		<image class="top-img8" src="https://s10.mogucdn.com/mlcdn/c45406/200814_26dehj04aiff66e5fc1kl8h238c44_750x86.jpg_999x999.v1c0.81.webp" lazy-load />
+		<view class="items">
+			<swiper 
+      class="swiper"
+      circular
+      indicator-dots
+      previous-margin="50px"
+      next-margin="50px"
+			indicator-active-color="#ff5777"
+      >
+				<block wx:for="{{banners}}" wx:key="index">
+					<swiper-item classs="swiper-item">
+						<image class="swiper-img" src="{{item.image}}" mode="widthFix" bindtap="previewImage" data-img="{{item.image}}" lazy-load />
+            <image class="swiper-order" src="{{item.order}}" mode="widthFix" lazy-load />
+					</swiper-item>
+				</block>
+			</swiper>
+		</view>
+    <image 
+    class="top-img9" 
+    bindtap="moreClick"
+    src="https://s10.mogucdn.com/mlcdn/c45406/200820_0311jgj98aljc8a06fkbbfh8lejh5_750x86.png_999x999.v1c0.81.webp" 
+    lazy-load />
+	</view>
+	<view class="comment">
+		<block wx:for="{{comments}}" wx:key="index">
+			<view class="item">
+				<view class="first">
+					<view class="left">
+						<image class="avatar" src="{{item.fromUser.avatar}}" />
+					</view>
+					<view class="right">
+						<view class="top">
+							<view class="uname">
+								{{item.fromUser.uname}}
+							</view>
+							<view class="fav">
+								<view class="icon" wx:if="{{index === 0}}" ></view>
+								<text class="cfavs">{{item.cFavs}}</text>
+								<text class="iconfont icon-zanpress" bindtap="dianzan"></text>
+							</view>
+						</view>
+						<view class="bottom">
+							<view class="content">
+								{{item.content}}
+							</view>
+							<view class="time">{{utils.dateFormat(item.created,"MM-dd hh:mm")}}
+							</view>
+							<block wx:for="{{item.childCommentInfo.comments}}" wx:for-item="value" wx:for-index="indey" wx:key="indey" >
+								<view class="second">
+									<view class="left">
+										<image class="avatar" src="{{value.fromUser.avatar}}" />
+									</view>
+									<view class="right">
+										<view class="top">
+											<view class="uname">
+												{{value.fromUser.uname}}
+											</view>
+										<view class="fav">
+											<text class="cfavs">{{value.cFavs}}</text>
+											<text class="iconfont icon-zanpress" bindtap="dianzan"></text>
+										</view>
+									</view>
+								<view class="bottom">
+									<view class="content">
+										{{value.content}}
+									</view>
+									<view class="time">{{utils.dateFormat(value.created,"MM-dd hh:mm")}}
+									</view>
+								</view>
+							</view>
+						</view>
+		 			</block>
+				</view>
+			</view>
+		</view>
+	</view>
+</block>
+</view>
+</view>

@@ -1,7 +1,6 @@
-<!--pages/home/childCpn/wj-recommend/wj-recommend.wxml-->
 <view class="recommend">
 	<block wx:for="{{list}}" wx:key="index">
-		<view class="recommend-item">
+		<view class="recommend-item" bindtap="recommendClick">
 			<image class="recommend-img" src="{{item.image}}" />
 			<text class="recommend-text">{{item.title}}</text>
 		</view>

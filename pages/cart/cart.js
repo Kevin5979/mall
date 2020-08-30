@@ -102,7 +102,13 @@ Page({
     })
   },
   // 支付功能
-  topay(){
+  topay() {
+    wx.showToast({
+      title: "该功能待开发",
+      icon: "none"
+    })
+  },
+  editClick() {
     wx.showToast({
       title: "该功能待开发",
       icon: "none"

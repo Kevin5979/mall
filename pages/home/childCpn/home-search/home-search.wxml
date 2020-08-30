@@ -1,0 +1,12 @@
+<view class="search">
+	<view class="left" bindtap="moreClick">
+		<text class="iconfont icon-gengduo"></text>
+	</view>
+	<view class="center" bindtap="searchClick">
+		<input disabled class="inp" confirm-type="search" placeholder="{{placeholder}}" />
+		<text class="iconfont icon-fangdajing"></text>
+	</view>
+	<view class="right" bindtap="messageClick">
+		<text class="iconfont icon-xiaoxi1"></text>
+	</view>
+</view>

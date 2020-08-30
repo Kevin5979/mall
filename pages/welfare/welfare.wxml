@@ -1,0 +1,16 @@
+<!-- 新人福利 -->
+<view class="welfare">
+	<image class="top-img" bindtap="topClick" src="https://i.loli.net/2020/08/24/M5nCjgK9ulhsd27.png" />
+
+  <!-- 列表 -->
+	<view class="list">
+		<block wx:for="{{docs}}" wx:key="index">
+			<goods-item class="goods-item" item="{{item}}" />
+		</block>
+	</view>
+
+  <!-- 返回顶部 -->
+  <wj-back-top wx:if="{{showBackTop}}" />
+
+
+</view>

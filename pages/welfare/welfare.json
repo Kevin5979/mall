@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "goods-item": "./goods-item/goods-item",
+    "wj-back-top": "../../components/wj-back-top/wj-back-top"
+  }
+}

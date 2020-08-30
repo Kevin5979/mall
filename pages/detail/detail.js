@@ -17,13 +17,14 @@ Page({
     info: {}, // 产品参数
     rule: {}, // 产品尺寸
     recommend: [], // 推荐数据
-    toIndex: null,
+    toIndex: "null",
     scrollHeight: 0,
     goodsID: null,
     shopID: null
   },
   tabClick(event) {
     const index = event.detail
+    
     if (index === 0) {
       this.setData({
         toIndex: "detail-goods"

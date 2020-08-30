@@ -1,0 +1,174 @@
+.top-img {
+  width: 100%;
+  height: 480rpx;
+  vertical-align: bottom;
+}
+
+.top-img2 {
+  width: 100%;
+  height: 280rpx;
+  vertical-align: bottom;
+}
+
+.top-img3 {
+  width: 100%;
+  height: 450rpx;
+  display: block;
+}
+
+.top-img4 {
+  width: 100%;
+  height: 450rpx;
+  display: block;
+}
+
+.top-img5 {
+  width: 100%;
+  height: 80rpx;
+  display: block;
+}
+
+.top-img6 {
+  width: 100%;
+  height: 270rpx;
+  display: block;
+}
+
+.top-img7 {
+  width: 100%;
+  height: 50rpx;
+  display: block;
+}
+
+.top-img8 {
+  width: 100%;
+  height: 110rpx;
+  display: block;
+}
+
+.items {
+  width: 100%;
+  height: 500rpx;
+  background-color: rgb(255, 195, 195);
+}
+
+.swiper {
+  width: 100%;
+  height: 600rpx;
+  padding: 0 70rpx;
+  box-sizing: border-box;
+  background-color: rgb(255, 195, 195);
+}
+
+.swiper-item{
+  height: 100%;
+}
+
+.swiper-img{
+  width: 100%;
+}
+
+.swiper-order{
+  position: absolute;
+  width: 40rpx;
+  top: 20rpx;
+  left: 20rpx;
+  z-index: 99;
+}
+
+.top-img9{
+  padding-top: 100rpx;
+  width: 100%;
+  height: 90rpx;
+  display: block;
+}
+
+.fav{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.icon{
+  width: 110rpx;
+  height: 38rpx;
+  background: url('https://s10.mogucdn.com/mlcdn/c45406/200207_669j9el86k41b7c6119hlajf5780k_180x64.png') 50% no-repeat;
+  background-size: 100% 100%;
+  margin-right: 20rpx;
+  vertical-align: bottom;
+}
+
+.comment .item .first,
+.comment .item .second{
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  padding: 14rpx 30rpx;
+  box-sizing: border-box;
+}
+
+.comment .item .second{
+  padding: 0;
+}
+
+.item .right{
+  flex: 1;
+  margin-left: 20rpx;
+  padding-bottom: 20rpx;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #eee;
+}
+
+.second .right{
+  padding-bottom: 10rpx;
+  border-bottom: none;
+}
+
+
+.first .avatar{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+
+.second {
+  margin-top: 10rpx;
+}
+
+.second .avatar{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.first .top,
+.second .top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.first .top .uname{
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.content{
+ font-size: 26rpx;
+}
+
+.cfavs{
+  font-size: 26rpx;
+  color: #999;
+  margin-right: 10rpx;
+}
+
+.icon-dianzan{
+  color: #666;
+  margin-top: -10rpx;
+}
+
+.time{
+  font-size: 26rpx;
+  color: #999;
+  margin-top: 6rpx;
+}
+

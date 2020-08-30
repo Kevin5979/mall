@@ -31,7 +31,7 @@
 								2020.7.3 15:25-2020.9.30 23:59
 							</view>
 							</view>
-							<view class="right">
+							<view class="right" bindtap="getCoupons">
 								立即领取
 							</view>
 						</view>

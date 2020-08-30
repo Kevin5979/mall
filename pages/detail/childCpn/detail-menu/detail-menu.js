@@ -36,7 +36,8 @@ Component({
     }
   },
   data: {
-    goCart: false
+    goCart: false,
+    isStarred: false
   },
   methods: {
     addCart() {
@@ -68,6 +69,22 @@ Component({
       if (this.data.goCart) {
         wx.showToast({
           title: '已添加到购物车'
+        })
+      }
+    },
+    starred() {
+      this.setData({
+        isStarred: !this.data.isStarred
+      })
+      if (this.data.isStarred) {
+        wx.showToast({
+          title: '已收藏',
+          icon: "none"
+        })
+      } else {
+        wx.showToast({
+          title: '取消收藏',
+          icon: 'none'
         })
       }
     }

@@ -1,6 +1,6 @@
 <view class="popular">
   <block wx:for="{{popular}}" wx:key="index">
-    <view class="popular-item">
+    <view class="popular-item" bindtap="popularClick" data-title="{{item.title}}">
       <image class="popular-img" src="{{item.image}}" mode="widthFix" lazy-load/>
       <text class="popular-text">{{item.title}}</text>
     </view>

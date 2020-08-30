@@ -8,8 +8,8 @@
 			<view class="iconfont icon-xiaoxi"></view>
 			<view>客服</view>
 		</view>
-		<view class="item">
-			<view class="iconfont icon-unstarred"></view>
+		<view class="item" bindtap="starred">
+			<view class="iconfont {{isStarred?'icon-starred':'icon-unstarred'}} "></view>
 			<view>收藏</view>
 		</view>
 	</view>

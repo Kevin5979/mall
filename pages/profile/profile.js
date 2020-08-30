@@ -1,12 +1,20 @@
+let app = getApp()
 Page({
   data: {
     isLogin: false,
     goodsNumber: 0
   },
   toLogin() {
-    wx.switchTab({
-      url: '/pages/home/home'
-    })
+    const prePage = app.globalData.prePage
+    if (prePage) {
+      wx.redirectTo({
+        url: prePage
+      })
+    } else {
+      wx.switchTab({
+        url: '/pages/home/home'
+      })
+    }
     this.setData({
       isLogin: true
     })
@@ -33,7 +41,7 @@ Page({
       userInfo
     })
   },
-  onShow: function () {
+  onShow: function (options) {
     const goodsNumber = wx.getStorageSync('goodsNumber')
     this.setData({
       goodsNumber

@@ -10,7 +10,7 @@ Component({
   },
   methods: {
     itemClick(event) {
-      const index = event.target.dataset.index
+      const index = event.currentTarget.dataset.index
       if (index !== this.data.currentIndex) {
         this.setData({
           currentIndex: index

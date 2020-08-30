@@ -1,0 +1,115 @@
+@import '../../assets/iconfont/iconfont.wxss';
+
+.top{
+  padding: 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-bottom: 2rpx solid #eee;
+}
+
+.inp{
+  flex: 1;
+  border: 1rpx solid #999;
+  border-radius: 10rpx;
+  font-size: 32rpx;
+  padding-left: 30rpx;
+  box-sizing: border-box;
+  height: 70rpx;
+}
+
+.inp.active{
+  border-color: #ff5777;
+}
+
+.to-search{
+  width: 12%;
+  font-size: 32rpx;
+  text-align: center;
+  color: #333;
+}
+
+.history{
+  margin-top: 40rpx;
+  border-bottom: 2rpx solid #eee;
+}
+
+.history .top-line{
+  padding: 0 24rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.history .top-line .left{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: #999;
+  font-size: 30rpx;
+}
+
+.history .top-line .left .icon-fangdajing{
+  font-size: 26rpx;
+  margin-right: 10rpx;
+}
+
+.icon-shanchu{
+  color: #999;
+  font-size: 40rpx;
+  padding: 0 10rpx;
+  box-sizing: border-box;
+}
+
+.history .content{
+  color: #999;
+  font-size: 30rpx;
+  padding: 20rpx 20rpx 36rpx 26rpx;
+  box-sizing: border-box;
+}
+
+.hot-key{
+  margin-top: 30rpx;
+}
+
+.hot-key .top-line{
+  color: #999;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+
+.icon-wujiaoxingxingxing{
+  margin-right: 6rpx;
+}
+
+.keys{
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.keys.search{
+  margin-top: 0;
+}
+
+.keys.search .item{
+  margin: 6rpx 10rpx;
+}
+
+.keys .item{
+  color: #666;
+  padding: 8rpx 20rpx;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+  margin: 20rpx 16rpx;
+  border: 1rpx solid #eee;
+}
+
+.keys .item.active{
+  color: #ff5777;
+}
+

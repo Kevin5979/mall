@@ -12,7 +12,7 @@ Component({
   },
   methods: {
     previewImage(event) {
-      const currentImg = 'http:' + event.target.dataset.img
+      const currentImg = 'http:' + event.currentTarget.dataset.img
       wx.previewImage({
         current: currentImg,
         urls: this.data.infoImages

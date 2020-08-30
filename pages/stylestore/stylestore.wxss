@@ -1,0 +1,81 @@
+.stylestore {
+  background-color: #eee;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+.top image {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.top .top-img1 {
+  width: 108%;
+  margin-left: -4%;
+  height: 330rpx;
+}
+
+.top .top-img2 {
+  height: 150rpx;
+  width: 108%;
+  margin-left: -4%;
+}
+
+.top .top-img3 {
+  margin-top: 30rpx;
+}
+
+.top .top-img5 {
+  height: 120rpx;
+  border-radius: 20rpx 20rpx 0 0;
+}
+
+.top .top-img6 {
+  height: 120rpx;
+  margin-top: 26rpx;
+  border-radius: 20rpx 20rpx 0 0;
+}
+
+.top .top-img7 {
+  height: 80rpx;
+  margin: 20rpx 0;
+  transform: scale(1.1);
+}
+
+.tabbar {
+  width: 106%;
+  margin-left: -3%;
+  background-color: #333;
+  overflow: scroll;
+  position: sticky;
+  top: 0;
+}
+
+
+.tabbar::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.cantiner {
+  width: 195%;
+  display: flex;
+  justify-content: start;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.cantiner>view{
+  font-size: 32rpx;
+  color: rgb(172, 172, 172);
+  padding: 30rpx 24rpx;
+  box-sizing: border-box;
+  margin: 0 16rpx;
+  border-bottom: 8rpx solid transparent;
+}
+
+.cantiner>.active{
+  color: #fff;
+  border-color: #fff;
+}

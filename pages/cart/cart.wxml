@@ -1,6 +1,6 @@
 <view id="cart">
 	<view class="top-menu">
-		<view>编辑</view>
+		<view bindtap="editClick">编辑</view>
 	</view>
 	<view class="main">
 		<block wx:for="{{cart}}" wx:key="index">

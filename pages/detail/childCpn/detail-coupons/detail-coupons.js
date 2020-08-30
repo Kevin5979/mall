@@ -19,6 +19,12 @@ Component({
     complete() {
       const sheet = this.selectComponent("#action-sheet")
       sheet.__closeMaster()
+    },
+    getCoupons(){
+      wx.showToast({
+        title: '待完善',
+        icon:"none"
+      })
     }
   },
   ready() {

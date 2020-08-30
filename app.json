@@ -4,7 +4,12 @@
     "pages/category/category",
     "pages/cart/cart",
     "pages/profile/profile",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/welfare/welfare",
+    "pages/draw/draw",
+    "pages/stylestore/stylestore",
+    "pages/search/search",
+    "pages/search-goods/search-goods"
   ],
   "tabBar": {
     "selectedColor": "#ff5777",

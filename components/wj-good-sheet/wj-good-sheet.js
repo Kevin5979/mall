@@ -94,7 +94,7 @@ Component({
         index,
         indey,
         value
-      } = event.target.dataset
+      } = event.currentTarget.dataset
       if (!this.data.isSelect) {
         this.setData({
           isSelect: true

@@ -55,3 +55,7 @@
   text-align: center;
   background: linear-gradient(90deg, #ff5777, #ff468f);
 }
+
+.icon-starred{
+  color: #ff5777;
+}

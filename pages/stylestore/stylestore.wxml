@@ -1,0 +1,24 @@
+<view class="stylestore">
+	<view class="top">
+		<image class="top-img1" src="https://s10.mogucdn.com/mlcdn/c45406/200828_88c0hk2086929b7jlgjihhg2lk7cf_750x500.jpg_999x999.v1c0.81.webp" mode="widthFix" />
+		<image class="top-img2" src="https://s10.mogucdn.com/mlcdn/c45406/200828_27cci049h72jk7ag5dlac9j0908f9_750x258.jpg_999x999.v1c0.81.webp" mode="widthFix" />
+		<image class="top-img3" src="https://s10.mogucdn.com/mlcdn/c45406/200828_45la6al16933lhkgk52d67id1j78l_750x155.png_999x999.v1c0.81.webp" mode="widthFix" />
+		<image class="top-img4" src="https://s10.mogucdn.com/mlcdn/c45406/200512_1fa7jhh64cak084570957b61ekb75_750x93.png_999x999.v1c0.81.webp" mode="widthFix" />
+		<image class="top-img5" src="https://s10.mogucdn.com/mlcdn/c45406/200827_2fdb43gi4b15891i5j7014f7927j6_714x253.jpg_999x999.v1c0.81.webp" mode="widthFix" />
+		<goods-style1 banner="{{banner1}}" />
+		<image class="top-img6" src="https://s10.mogucdn.com/mlcdn/c45406/200827_72l3gk704lbc827ge66ej78ajik17_713x252.jpg_999x999.v1c0.81.webp" mode="widthFix" />
+		<goods-style1 banner="{{banner2}}" />
+		<image class="top-img7" src="https://s10.mogucdn.com/mlcdn/c45406/200806_70iaj5d4j30dd9ld694gd7692ijgj_750x52.jpg_999x999.v1c0.81.webp" mode="widthFix" />
+		<goods-style2 banner="{{banner3}}" title="红人私服" content="时髦精的穿搭推荐" />
+		<goods-style2 banner="{{banner4}}" title="风格原创" content="品味单品大合集" />
+	</view>
+	<view class="tabbar">
+		<view class="cantiner">
+			<block wx:for="{{tabbars}}" wx:key="index">
+				<view bindtap="tabClick" data-index="{{index}}" class="{{currentIndex === index ? 'active':''}}">{{item}}</view>
+			</block>
+		</view>
+	</view>
+	<wj-goods goods="{{listItems[currentIndex]}}" />
+
+</view>

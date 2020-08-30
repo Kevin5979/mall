@@ -5,7 +5,8 @@
     "wj-popular": "/components/wj-popular/wj-popular",
     "wj-goods": "/components/wj-goods/wj-goods",
     "wj-back-top": "/components/wj-back-top/wj-back-top",
-    "home-recommend": "./childCpn/home-recommend/home-recommend"
+    "home-recommend": "./childCpn/home-recommend/home-recommend",
+    "home-search": "./childCpn/home-search/home-search"
   },
   "navigationBarTitleText": "购物街"
 }

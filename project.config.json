@@ -82,6 +82,42 @@
 					"id": -1,
 					"name": "我的页面",
 					"pathName": "pages/profile/profile",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "新人福利",
+					"pathName": "pages/welfare/welfare",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "0元抽奖",
+					"pathName": "pages/draw/draw",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "风格好店",
+					"pathName": "pages/stylestore/stylestore",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "搜索页",
+					"pathName": "pages/search/search",
+					"query": "",
+					"scene": 1006
+				},
+				{
+					"id": -1,
+					"name": "商品搜索",
+					"pathName": "pages/search-goods/search-goods",
+					"query": "key=包包",
 					"scene": null
 				}
 			]

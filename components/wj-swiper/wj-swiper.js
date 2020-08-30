@@ -14,8 +14,11 @@ Component({
   },
   methods: {
     previewImage(options) {
+      if( /https:/.test(options.currentTarget.dataset.img)){
+        return
+      }
       wx.previewImage({
-        current: options.target.dataset.img,
+        current: options.currentTarget.dataset.img,
         urls: this.data.images
       })
     }
